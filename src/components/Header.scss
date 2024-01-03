@@ -1,0 +1,43 @@
+.menu{
+  background-color: #101418;
+  height: 100vh;
+  width: 20vw;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.headerLink{
+  color: #b0b8c4;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.botaoMais{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.iconsMenu {
+  color: #b0b8c4;
+}
+
+.botaoMais p{
+  color: #b0b8c4;
+  font-size: 1rem;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.links{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+

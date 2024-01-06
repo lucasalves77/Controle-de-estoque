@@ -27,14 +27,21 @@ const Header = () =>{
     }));
   };
 
+  const logout = () => {
+    localStorage.clear()
+    window.location.reload()
+  }
+
   return(
     <>  
-      <div className="menu">
+      <div className="menu">  
+        <div>
+          <button onClick={logout}>logout</button>
+        </div>    
         <div className="botaoMais">
           <FaHouse className="iconsMenu"/>
           <Link className="headerLink" to="/">Pagina inicial</Link>     
         </div>
-        
         <div>
           <div className="botaoMais" onClick={() => handleBotaoClick('conteudo1')} disabled={!conteudosVisiveis['conteudo1']}>
             <FaBoxOpen name="box" style={{fontSize: '20px'}} className="iconsMenu"/>
